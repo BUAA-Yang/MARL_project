@@ -178,7 +178,7 @@ class MADDPG:
             agt.soft_update(agt.actor, agt.target_actor, self.tau)
             agt.soft_update(agt.critic, agt.target_critic, self.tau)
 
-num_episodes = 2000
+num_episodes = 5000
 episode_length = 25  # 每条序列的最大长度
 buffer_size = 100000
 hidden_dim = 64
